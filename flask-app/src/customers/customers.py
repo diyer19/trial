@@ -6,6 +6,7 @@ from src import db
 customers = Blueprint('customers', __name__)
 
 # Get all customers from the DB
+## add comment here 
 @customers.route('/customers', methods=['GET'])
 def get_customers():
     cursor = db.get_db().cursor()
